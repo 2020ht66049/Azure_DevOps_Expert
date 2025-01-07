@@ -1,0 +1,94 @@
+# 1) Printing Hello-World message
+==================================
+def print_hello_world():
+    print("Hello, World!")
+    print("\nExplanation:")
+    print("The 'print' function is used to display output in Python. In this case, it outputs the text 'Hello, World!'.")
+
+print_hello_world()
+
+# 2) Explaining a calculator program
+=====================================
+def calculator():
+    print("\nCalculator Program")
+    print("Enter two numbers and choose an operation (+, -, *, /):")
+    
+    # Getting input from the user
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter the operation (+, -, *, /): ")
+
+    # Performing the operation
+    if operation == '+':
+        result = num1 + num2
+        print(f"The result is: {result}")
+    elif operation == '-':
+        result = num1 - num2
+        print(f"The result is: {result}")
+    elif operation == '*':
+        result = num1 * num2
+        print(f"The result is: {result}")
+    elif operation == '/':
+        if num2 != 0:
+            result = num1 / num2
+            print(f"The result is: {result}")
+        else:
+            print("Division by zero is not allowed.")
+    else:
+        print("Invalid operation.")
+
+    print("\nExplanation:")
+    print("The calculator takes two inputs and an operator. Based on the operator, it performs the corresponding arithmetic operation using conditional statements.")
+
+# Uncomment the following line to run the calculator
+# calculator()
+
+# 3) Explaining if-else condition
+==================================
+def explain_if_else():
+    print("\nIf-Else Condition")
+    number = int(input("Enter a number: "))
+
+    if number % 2 == 0:
+        print(f"{number} is even.")
+    else:
+        print(f"{number} is odd.")
+
+    print("\nExplanation:")
+    print("The 'if' statement checks a condition (if the number is divisible by 2).")
+    print("If the condition is True, it executes the code block under 'if'.")
+    print("Otherwise, it executes the code block under 'else'.")
+
+# Uncomment the following line to run the if-else explanation
+# explain_if_else()
+
+# 4) Explaining loop
+====================
+def explain_loop():
+    print("\nFor Loop Explanation")
+    print("Numbers from 1 to 5 will be printed:")
+
+    for i in range(1, 6):
+        print(i)
+
+    print("\nExplanation:")
+    print("The 'for' loop iterates over a sequence. In this case, the 'range' function generates numbers from 1 to 5, and the loop prints each number.")
+
+    print("\nWhile Loop Explanation")
+    print("Printing numbers from 1 to 5 using a while loop:")
+
+    count = 1
+    while count <= 5:
+        print(count)
+        count += 1
+
+    print("\nExplanation:")
+    print("The 'while' loop continues to execute the block of code as long as the condition (count <= 5) is True.")
+
+# Uncomment the following line to run the loop explanation
+# explain_loop()
+
+# You can uncomment the functions below to test each explanation interactively.
+# calculator()
+# explain_if_else()
+# explain_loop()
